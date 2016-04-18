@@ -4,13 +4,17 @@
 	<meta charset="UTF-8">
 	<title>css3选择器</title>
     <style>
-        .list{
+    body{
+    	margin:0;
+    	padding:0;
+    }
+  /*      .list{
         	width: 900px;
         	height: 900px;
         	margin:0 auto;
         	border: 1px solid #ccc;
         }
-        .list li{
+        .list li,div{
         	width: 150px;
         	height: 150px;
         	margin: 20px;
@@ -18,6 +22,40 @@
         	float: left;
 
         }
+       div span,h1,p{
+       	width: 50px;
+       	height: 50px;
+       	margin: 10px;
+       	display: block;
+       	background:red;
+       	float: left;
+       	font-size: 20px;
+       }
+       div :only-child{
+       	 background: blue;   	 
+       }
+       ul :nth-child(3){
+       	background: orange;
+       }
+       /*even 和odd  都是从1开始计数的*/
+        /*ul :nth-child(even){
+       	background: yellow;
+       }
+        ul :nth-child(odd){
+       	background: purple;
+       }
+       div :nth-last-child(1){
+         background: green;
+       }
+       ul :nth-last-child(3){
+          border: 2px dashed red;
+       }*/
+       li:first-child{
+          border: 5px dashed blue;
+       }
+       div :first-child{
+       	  background: #ccc;
+       }
     </style>
 </head>
 <body>
@@ -30,6 +68,18 @@
 		<li>006</li>
 		<li>007</li>
 		<li>008</li>
+		<div>
+			<span>sp1</span>
+			<span>sp2</span>
+			<h1>标题1</h1>
+			<h1>标题2</h1>
+			
+	    </div>
+	    <div>
+	    	<p>p标签</p>
+
+	    </div>
 	</ul>
+	
 </body>
 </html>
